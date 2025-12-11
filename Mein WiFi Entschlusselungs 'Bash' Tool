@@ -1,0 +1,26 @@
+BASH PROGRAMM://
+
+sudo bash wpa_crack_automate.sh
+
+Usage: wpa_crack_automate.sh -i capture.pcap -w wordlist.txt [-m hashcat|aircrack] [-b BSSID] [-s SSID]
+
+  -i <file>      : Eingangs-Capture (.pcap, .pcapng, .cap)
+  -w <file>      : Wortliste (wordlist)
+  -m <mode>      : "hashcat" (default) oder "aircrack"
+  -b <BSSID>     : optional, BSSID des AP (z.B. AA:BB:CC:DD:EE:FF) für aircrack
+  -s <SSID>      : optional, SSID (nur informative Zwecke)
+  -h             : diese Hilfe
+
+Example:
+  wpa_crack_automate.sh -i capture.pcap -w /usr/share/wordlists/rockyou.txt -m hashcat
+
+
+
+
+
+
+AUSFÜHREN://
+
+
+$sudo ./wpa_crack_automate.sh -i '/home/whoami/Desktop/Handshake 2/WLAN768953_7490bca9387e.pcap'  -w '/home/whoami/Desktop/Handshake 2/WörterBuch/rockyou2.txt' -m aircrack
+
